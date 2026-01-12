@@ -1,0 +1,192 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General sections */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    color: #4B2E2E;
+    font-weight: 700;
+}
+
+/* Navbar custom color */
+.navbar {
+    background-color: #4B2E2E;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+}
+
+/* HERO (HOME) */
+#home {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.60);
+  z-index: 1;
+}
+
+/* ABOUT */
+#store .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+#taster {
+  background: linear-gradient(135deg, #6f4e37, #c7a17a); /* coffee-tone gradient */
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+/* Modal za About */
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px;
+  margin: 15% auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* CONTACT */
+#contact input,
+#contact textarea,
+#contact select {
+    border-radius: 8px;
+}
+
+.sakrij{
+  display: none;
+}
+
+.prikaz2{
+  display: block;
+}
+
+.crveno{
+    border: 2px solid #dc3545;
+}
+
+/* STAFF */
+.staff-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#staff .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* faq */
+#faq {
+  background-color: white;
+}
+
+#faq .accordion-button {
+  background-color: #fff;
+  color: #333;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#faq .accordion-button:not(.collapsed) {
+  background-color: #d9a066;
+  color: #fff;
+}
+
+#faq .accordion-button:focus {
+  box-shadow: none;
+}
+
+#faq .accordion-body {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 1rem 1.25rem;
+  color: #555;
+}
+
+/* BACK TO TOP */
+#backToTop {
+  position: fixed;
+  bottom: 12px; 
+  right: 12px; 
+  width: 50px;
+  height: 50px;
+  background-color: #4B2E2E;
+}
+
+footer a:hover {
+    color: #FFD700;
+}
+
+footer .btn-warning {
+    transition: all 0.3s ease;
+}
+
+footer .btn-warning:hover {
+    transform: translateY(-2px);
+}
+
+#links a {
+    transition: color 0.3s;
+}
+
+#links a:hover {
+    color: #ffc107 !important;
+}
+
+#socials a i {
+    transition: color 0.3s;
+}
+
+#socials a:hover i {
+    color: #ffc107 !important;
+}
